@@ -1,8 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
 <meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2211%22 fill=%22none%22 stroke=%22%23e8641c%22 stroke-width=%226%22/%3E%3C/svg%3E">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>THE ISSUE 2026</title>
+<meta name="description" content="전문대학 및 고등직업교육 동향과 현안. 한국고등직업교육연구소가 매월 발간한 정책 브리프를 웹 이북으로 모았습니다.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="THE ISSUE · 한국고등직업교육연구소">
+<meta property="og:title" content="THE ISSUE 2026 | 한국고등직업교육연구소">
+<meta property="og:description" content="전문대학 및 고등직업교육 동향과 현안. 한국고등직업교육연구소가 매월 발간한 정책 브리프를 웹 이북으로 모았습니다.">
+<meta property="og:url" content="https://hver-theissue.pages.dev/">
+<meta property="og:image" content="https://hver-theissue.pages.dev/img/og/og-main.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="THE ISSUE 2026 | 한국고등직업교육연구소">
+<meta name="twitter:description" content="전문대학 및 고등직업교육 동향과 현안. 한국고등직업교육연구소가 매월 발간한 정책 브리프를 웹 이북으로 모았습니다.">
+<meta name="twitter:image" content="https://hver-theissue.pages.dev/img/og/og-main.jpg">
+
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="한국고등직업교육연구소 THE ISSUE 2026 웹 이북 아카이브">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -123,7 +141,7 @@ section{padding-block:56px}
 .panel-head .ttl{min-width:0;flex:1 1 240px}
 .panel-head .meta{font-size:13px;color:var(--muted)}
 .panel-head h3{font-size:clamp(18px,2.2vw,21px);font-weight:700;margin-top:2px}
-.pnav{display:flex;gap:8px;margin-left:auto}
+.pnav{display:flex;gap:8px;margin-left:auto;align-items:center;flex-wrap:wrap}
 .pnav button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center}
 .pnav button:hover:not(:disabled){border-color:var(--ink)}
 .pnav button:disabled{opacity:.35;cursor:default}
@@ -132,6 +150,7 @@ section{padding-block:56px}
 @media (max-width:640px){.cards{padding:16px;gap:14px}.panel-head{padding:16px}}
 .card{display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;padding:0;transition:border-color .2s,transform .2s,box-shadow .2s}
 .card:hover{border-color:var(--c);transform:translateY(-3px);box-shadow:var(--shadow)}
+.card{cursor:default}
 .card.flash{animation:flash 1.6s ease}
 @keyframes flash{0%,60%{box-shadow:0 0 0 4px var(--brand)}100%{box-shadow:0 0 0 0 transparent}}
 .band{position:relative;height:138px;background-color:var(--c);
@@ -145,8 +164,17 @@ section{padding-block:56px}
 .card ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:13.5px}
 .card li{position:relative;padding-left:16px}
 .card li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--c);border-radius:50%}
-.card .go{margin-top:auto;padding-top:10px;font-size:13.5px;font-weight:700;color:var(--brand-ink);display:inline-flex;align-items:center;gap:6px}
-.card .go svg{width:15px;height:15px}
+.card-main{display:flex;flex-direction:column;flex:1;text-align:left;font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;border-radius:10px 10px 0 0}
+.acts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.act{display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap;letter-spacing:0;min-height:46px;padding:10px 8px;font:inherit;font-size:13.5px;font-weight:700;text-decoration:none;background:transparent;border:0;cursor:pointer;color:var(--brand-ink)}
+.act+.act{border-left:1px solid var(--line)}
+.act.ebk{color:var(--c)}
+:root[data-theme="dark"] .act.ebk{color:color-mix(in srgb,var(--c) 45%,#fff)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .act.ebk{color:color-mix(in srgb,var(--c) 45%,#fff)}}
+.act:hover{background:var(--sunk)}
+.act svg{width:15px;height:15px;flex:none}
+.pnav a.ebook{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border-radius:999px;background:var(--c);color:#fff;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.pnav a.ebook svg{width:15px;height:15px}
 
 /* ---------- Footer ---------- */
 footer{background:#3f4146;color:#eceae6;margin-top:24px}
@@ -186,6 +214,10 @@ footer .f-info{font-size:13px;opacity:.85;margin-top:18px;display:grid;gap:4px}
 .v-msg{color:#fff;margin:auto;text-align:center;font-size:15px}
 .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;z-index:99;background:var(--surface);padding:8px 12px}
 </style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
 
 <a class="skip" href="#archive">발간호 바로가기</a>
 
@@ -237,7 +269,7 @@ footer .f-info{font-size:13px;opacity:.85;margin-top:18px;display:grid;gap:4px}
 
   <section id="archive" style="padding-top:8px">
     <div class="wrap">
-      <div class="sec-title"><div><p class="eb">MONTHLY ISSUES</p><h2>월별 THE ISSUE</h2></div><span class="aside">표지를 누르면 해당 호의 기사 카드가 펼쳐지고, 카드를 누르면 PDF로 읽을 수 있습니다.</span></div>
+      <div class="sec-title"><div><p class="eb">MONTHLY ISSUES</p><h2>월별 THE ISSUE</h2></div><span class="aside">표지를 누르면 해당 호의 기사 카드가 펼쳐집니다. 카드 아래에서 PDF 원문 또는 eBook을 골라 읽을 수 있습니다.</span></div>
       <div class="covers" id="covers"></div>
     </div>
   </section>
@@ -335,6 +367,8 @@ footer .f-info{font-size:13px;opacity:.85;margin-top:18px;display:grid;gap:4px}
     shield:'<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="M9 12l2 2 4-4"/>'
   };
   const icon=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${IC[k]||IC.book}</svg>`;
+  const PDF_IC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>';
+  const BOOK_IC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5z"/><path d="M12 6v13.5"/></svg>';
   const COLORS=["#e8641c","#1f6fbf","#1f8a5b","#6b45c2","#c8235f","#0d8590","#b86e06"];
   const colorOf=(is,i)=>is.color||COLORS[i%COLORS.length];
 
@@ -384,25 +418,30 @@ footer .f-info{font-size:13px;opacity:.85;margin-top:18px;display:grid;gap:4px}
     p.innerHTML=`<div class="panel-head"><span class="num">${is.vol}</span>
         <div class="ttl"><p class="meta">Vol.${is.vol} · ${D.site.year}년 ${is.month}월호 · ${esc(is.date)}</p><h3>${esc(is.panelTitle||is.headline.replace(/\n/g," "))}</h3></div>
         <div class="pnav">
+          <a class="ebook" href="ebook/vol${is.vol}.html">${BOOK_IC}eBook 전체 보기</a>
           <button type="button" class="prev" aria-label="이전 호" ${idx===0?"disabled":""}>${chev("M15 6l-6 6 6 6")}</button>
           <button type="button" class="next" aria-label="다음 호" ${idx===D.issues.length-1?"disabled":""}>${chev("M9 6l6 6-6 6")}</button>
           <button type="button" class="close" aria-label="접기">${chev("M6 15l6-6 6 6")}</button>
         </div></div>
       <div class="cards">${is.articles.map((a,j)=>`
-        <button type="button" class="card" data-id="${a.id}" id="card-${a.id}">
+        <article class="card" data-id="${a.id}" id="card-${a.id}" tabindex="-1">
+          <button type="button" class="card-main" aria-label="${esc(a.title)} PDF 원문 보기">
           <span class="band"><span class="no">No.${String(j+1).padStart(2,"0")}</span>${icon(a.icon)}<span class="pill">${esc(a.category)}</span></span>
           <span class="card-body">
             <h4>${esc(a.title)}</h4>
             <p>${esc(a.summary)}</p>
             <ul>${(a.points||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
-            <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>PDF 원문 보기</span>
-          </span></button>`).join("")}</div>`;
+          </span></button>
+          <div class="acts">
+            <button type="button" class="act pdf">${PDF_IC}PDF 보기</button>
+            <a class="act ebk" href="ebook/vol${is.vol}.html#${a.id}">${BOOK_IC}eBook 보기</a>
+          </div></article>`).join("")}</div>`;
     covers.children[rowEnd].after(p);
     const go=v=>{toggle(v,true); $("#panel"+v).scrollIntoView({block:"nearest"});};
     p.querySelector(".prev").addEventListener("click",()=>idx>0&&go(D.issues[idx-1].vol));
     p.querySelector(".next").addEventListener("click",()=>idx<D.issues.length-1&&go(D.issues[idx+1].vol));
     p.querySelector(".close").addEventListener("click",()=>{toggle(vol); cover.focus();});
-    p.querySelectorAll(".card").forEach(c=>c.addEventListener("click",()=>openPdf(c.dataset.id)));
+    p.querySelectorAll(".card").forEach(c=>{const id=c.dataset.id; c.querySelector(".card-main").addEventListener("click",()=>openPdf(id)); c.querySelector(".act.pdf").addEventListener("click",()=>openPdf(id));});
     $("#jumpSel").value="v"+vol;
   }
   let rT,lastCols=0; addEventListener("resize",()=>{clearTimeout(rT);rT=setTimeout(()=>{const c=columns(); if(openVol!==null&&c!==lastCols)toggle(openVol,true); lastCols=c;},200)});
@@ -494,3 +533,5 @@ footer .f-info{font-size:13px;opacity:.85;margin-top:18px;display:grid;gap:4px}
   const h=location.hash.replace("#",""); if(/^vol\d+$/.test(h)){ const v=+h.slice(3); if(D.issues.some(x=>x.vol===v)){ toggle(v,true); setTimeout(()=>$("#"+h).scrollIntoView({block:"start"}),60);} }
 })();
 </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/ebook/:vol/*
+  Cache-Control: public, max-age=2592000
+/pdf/*
+  Cache-Control: public, max-age=2592000
+/img/*
+  Cache-Control: public, max-age=2592000

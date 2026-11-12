@@ -13,6 +13,7 @@ ebook/volNN/pNN.jpg   이북 쪽 이미지 (s/ 폴더는 미리보기용 작은 
 pdf/volNN-N.pdf       기사별 PDF
 img/og/               카톡·SNS 공유 썸네일
 _headers              Cloudflare 캐시 설정 (이미지·PDF 30일)
+lab-workspace-public.html  연구소 작업 현황 (공개용 스냅샷) → /lab-workspace-public
 ```
 
 ## 새 호 추가 순서
